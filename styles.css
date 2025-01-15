@@ -1,0 +1,256 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Estilos básicos e responsivos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #aaf59d;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #9db059;
+    color: #04405e;
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 1 1.1rem;
+    white-space: nowrap;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0.5em 0 0;
+}
+
+section {
+    padding: 2em;
+    max-width: 800px;
+    margin: 1em auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: #444;
+}
+
+/* Estilo de botões */
+button.btn {
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: #fff;
+}
+
+button.btn-primary {
+    background-color: #5cb0e7;
+}
+
+button.btn-primary:hover {
+    background-color: #5cb0e7;
+    transform: scale(1.1);
+}
+
+button.btn-secondary {
+    background-color: #98663a;
+}
+
+button.btn-secondary:hover {
+    background-color: #98663a;
+    transform: scale(1.1);
+}
+
+button.btn-tertiary {
+    background-color: #9558f0;
+}
+
+button.btn-tertiary:hover {
+    background-color: #9558f0;
+    transform: scale(1.1);
+}
+
+/* Estilo para links */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #9db059;
+    color: #04405e;
+}
+
+/* Estilo para o bloco de clima */
+#weather {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#weather h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #444;
+}
+
+#weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#weather-info p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .my-element {
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation: animate__backInDown;
+        animation-duration: 44s;
+        animation-iteration-count: infinite;
+    }
+}
+
+/* Estilo para a seção Cursando */
+#studying {
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(135deg, #9db059, #04405e);
+    animation: fadeInUp 2s ease-out;
+}
+
+#studying h2 {
+    color: #fff;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    animation: rotate 2s infinite linear;
+    /* Animação de rotação */
+}
+
+.course-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+    color: #fff;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    0% {
+        opacity: 20;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 30;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilo do Botão Flutuante do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00e676;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #9558f0;
+    transform: scale(1.1);
+}
